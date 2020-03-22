@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+#background {
+    display: flex;
+    width:100%;
+    height: 100%;
+    background-color: #fff;
+}
+#nav{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+}
+#nav p{
+    width: 50%;
+    padding: 0 60px;
+}
+#menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#head{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 50px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+button{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: black;
+    font-size: 20px;
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    animation: a 1s cubic-bezier(0.19, 1, 0.22, 1) 10s both;
+}
+button:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+#pic1{
+    width:33%;
+    height: 30%;
+    position: absolute;
+    left:0;
+    top: 60%;
+    background-image: url(p2.png);
+    background-size: cover;
+    animation: a 3s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+
+#pic2{
+    width:33%;
+    height: 30%;
+    position: absolute;
+    right:0;
+    top:60%;
+    background-image: url(p1.png);
+    background-size: cover;
+    animation: a 3s cubic-bezier(0.19, 1, 0.22, 1) 8s both;
+}
+
+#pic3{
+    width:33%;
+    height: 30%;
+    position: absolute;
+    left: 50%;
+    top:60%;
+    transform: translateX(-50%);
+    background-image: url(p3.png);
+    background-size: cover;
+    animation: a 3s cubic-bezier(0.19, 1, 0.22, 1) 4s both;
+}
+
+#text
+{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+#a{
+    width: 30%;
+    padding: 0 80px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+#b{
+    width: 40%;
+    padding: 0 130px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+#c{
+    width: 30%;
+    padding: 0 100px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+@keyframes a{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
