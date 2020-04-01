@@ -3,141 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Shivam Verma</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="background">
-        <div id="nav">
-            <a href="index.html">Shivam Verma</a>
-            <div id="menu">
-                <a href="index.html">Home</a>
-				<a href="#">Skills</a>
-				<a href="project.html">Projects</a>
-				<a href="#">Contact</a>
+    <div id="back">
+        <div id="particles">
+            <p>Click on the screen to add more particles</p>
+            <div id="centertext">
+                <h2>Hey there, this is <span class="highlight"> Shivam Verma</span></h2>
+                <h1>I am a <span class="highlight">UI/UX Designer </span> & <br> <span class="highlight">A Full Stack JavaScript Developer</span></h1>
+                <a href="#project"><button>View My Work <i></i></button></a>
             </div>
         </div>
-        <h1 id="head">I am</h1>
-        <div id="pic1"></div>
-        <div id="pic2"></div>
-        <div id="pic3"></div>
-        <div id="text">
-            <h1 id="a"></h1>
-            <h1 id="b"></h1>
-            <h1 id="c"></h1>
-        </div>
-        <button>Hire Me</button>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    <script>
-        var options = {
-		strings: ["A UI/UX Designer"],
-		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-		stringsElement: null,
-		// typing speed
-		typeSpeed: 80,
-		// time before typing starts
-		startDelay: 1000,
-		// backspacing speed
-		backSpeed: 70,
-		// time before backspacing
-		backDelay: 100,
-		// loop
-		loop: true,
-		// false = infinite
-		loopCount: 1,
-		// show cursor
-		showCursor: false,
-		// character for cursor
-		cursorChar: "|",
-		// attribute to type (null == text)
-		attr: null,
-		// either html or text
-		contentType: 'html',
-		// call when done callback function
-		callback: function() {},
-		// starting callback function before each string
-		preStringTyped: function() {},
-		//callback for every typed string
-		onStringTyped: function() {},
-		// callback for reset
-		resetCallback: function() {}
-	}
+    <div id="project">
 
-        var typed = new Typed('#a', options);
-
-        var options1 = {
-		strings: ["Full Stack Developer"],
-		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-		stringsElement: null,
-		// typing speed
-		typeSpeed: 80,
-		// time before typing starts
-		startDelay: 4000,
-		// backspacing speed
-		backSpeed: 70,
-		// time before backspacing
-		backDelay: 100,
-		// loop
-		loop: true,
-		// false = infinite
-		loopCount: 1,
-		// show cursor
-		showCursor: false,
-		// character for cursor
-		cursorChar: "|",
-		// attribute to type (null == text)
-		attr: null,
-		// either html or text
-		contentType: 'html',
-		// call when done callback function
-		callback: function() {},
-		// starting callback function before each string
-		preStringTyped: function() {},
-		//callback for every typed string
-		onStringTyped: function() {},
-		// callback for reset
-		resetCallback: function() {}
-	}
-
-        var typed = new Typed('#b', options1);
-
-        var options2 = {
-		strings: ["An Innovator"],
-		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-		stringsElement: null,
-		// typing speed
-		typeSpeed: 80,
-		// time before typing starts
-		startDelay: 8500,
-		// backspacing speed
-		backSpeed: 70,
-		// time before backspacing
-		backDelay: 100,
-		// loop
-		loop: true,
-		// false = infinite
-		loopCount: 1,
-		// show cursor
-		showCursor: false,
-		// character for cursor
-		cursorChar: "|",
-		// attribute to type (null == text)
-		attr: null,
-		// either html or text
-		contentType: 'html',
-		// call when done callback function
-		callback: function() {},
-		// starting callback function before each string
-		preStringTyped: function() {},
-		//callback for every typed string
-		onStringTyped: function() {},
-		// callback for reset
-		resetCallback: function() {}
-	}
-
-        var typed = new Typed('#c', options2);
-    </script>
+        <h1>My Projects</h1>
+        <div id="buttons">
+            <button class="dbtn" id="uiux">UI/UX</button>
+            <button class="dbtn">Web-based Projects</button>
+        </div>
+        <div id="blank">
+            <h1>Select one of the above topics to display content over here :)</h1>
+        </div>
+        <div id="showcase">
+            <div class="showpieces">
+                <img src="projects/Bonsai1.png" alt="" class="items" onclick="openmodal('projects/Bonsai1.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/FF1.png" alt="" class="items" onclick="openmodal('projects/FF1.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/KL.png" alt="" class="items" onclick="openmodal('projects/KL.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/Mocktail1.png" alt="" class="items" onclick="openmodal('projects/Mocktail1.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/Sz.png" alt="" class="items" onclick="openmodal('projects/Sz.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/Collage.png" alt="" class="items" onclick="openmodal('projects/Collage.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/Hotel.png" alt="" class="items" onclick="openmodal('projects/Hotel.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/imagination.png" alt="" class="items" onclick="openmodal('projects/imagination.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/HomeAutomation.png" alt="" class="items" onclick="openmodal('projects/HomeAutomation.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/PF1.png" alt="" class="items" onclick="openmodal('projects/PF1.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/RGB.png" alt="" class="items" onclick="openmodal('projects/RGB.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/Music1.png" alt="" class="items" onclick="openmodal('projects/Music1.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/AlienTech.png" alt="" class="items" onclick="openmodal('projects/AlienTech.png')">
+            </div>
+            <div class="showpieces">
+                <img src="projects/Tanishq.png" alt="" class="items" onclick="openmodal('projects/Tanishq.png')">
+            </div>
+        </div>
+        <div id="modalpopup">
+            <div id="content">
+              <span class="close" id="cl">&times</span>
+              <div id="contimg">
+                  <img src="" alt="" id="cont">
+              </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
