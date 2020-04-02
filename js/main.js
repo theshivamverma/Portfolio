@@ -23,8 +23,6 @@ const modal = document.querySelector("#modalpopup")
 const cont = document.querySelector("#cont")
 
 function openmodal(path){
-    let u = "url("+path+")";
-    console.log(path);
     modal.style.display = "block";
     cont.src = path;
 }

@@ -1,0 +1,139 @@
+@media(max-width:1380px){
+    #centertext{
+        width:70%;
+    }
+    .showpieces{
+        margin: 10px auto;
+        width: 60%;
+        height: 60%;
+    }
+    #content{
+        width: 95%;
+        height: 71%;
+        left:2.5%;
+        top: 14.5%;
+    }
+    .close{
+        right: 0%;
+    }
+}
+
+@media(max-width:1030px){
+    #blank > h1{
+        font-size: 45px;
+    }
+    .close{
+        right: -1%;
+    }
+}
+
+@media(max-width:800px){
+    #centertext > h1{
+        font-size: 30px;
+    }
+    #centertext > h2{
+        font-size: 25px;
+    }
+    .showpieces{
+        margin: 10px auto;
+        width: 60%;
+        height: 40%;
+    }
+    #content{
+        width: 95%;
+        height: 40%;
+        left:2.5%;
+        top: 30%;
+    }
+    .close{
+        font-size: 30px;
+        right: -1%;
+    }
+}
+@media(max-width:600px){
+    #centertext{
+        width:100%;
+    }
+    #centertext > h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    #centertext > h2{
+        font-size: 25px;
+    }
+    #particles > p{
+        font-size: 10px;
+    }
+    .dbtn{
+        height: 40px;
+        font-size: 15px;
+    }
+    .dbtn:nth-child(2){
+        width: 250px;
+        font-size: 12px;
+    }
+    .showpieces{
+        margin: 10px auto;
+        width: 80%;
+        height: 38%;
+    }
+    #content{
+        width: 95%;
+        height: 33%;
+        left:2.5%;
+        top: 33%;
+    }
+    .close{
+        font-size: 25px;
+        right: -1%;
+    }
+}
+
+@media(max-width:500px){
+    #centertext{
+        width:100%;
+    }
+    #centertext > h1{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    #centertext > h2{
+        font-size: 20px;
+    }
+    #particles > p{
+        font-size: 10px;
+    }
+
+    #centertext > a > button{
+        width: 150px;
+        height: 50px;
+        font-size: 15px;
+    }
+    .dbtn{
+        height: 40px;
+        font-size: 15px;
+    }
+    .dbtn:nth-child(2){
+        width: 250px;
+        font-size: 12px;
+    }
+    #blank > h1{
+        top: 30%;
+        font-size: 20px;
+    }
+    .showpieces{
+        margin: 10px auto;
+        width: 80%;
+        height: 35%;
+    }
+    #content{
+        width: 95%;
+        height: 30%;
+        left:2.5%;
+        top: 35%;
+    }
+    .close{
+        font-size: 14px;
+        right: -2%;
+    }
+}
