@@ -112,7 +112,7 @@ body,html{
     font-size: 20px;
 }
 
-.dbtn:nth-child(2){
+.dbtn:nth-child(1){
     width: 250px
 }
 
@@ -125,9 +125,14 @@ body,html{
     box-shadow: none;
 }
 
+#displayarea{
+    width: 100%;
+    height: 80%;    
+}
+
 #blank{
     width: 100%;
-    height: 80%;
+    height: 100%;
     background-color: #eee;
     text-align: center;
     position: relative;
@@ -143,16 +148,17 @@ body,html{
     font-size: 60px;
     color:rgba(80, 79, 79, 0.521);
 }
-#showcase{
+
+#displayarea #showcase{
     width: 100%;
-    height: 80%;
+    height: 100% !important;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     overflow: scroll;
     padding: 20px;
     display: none;
-    animation: collapse 0.7s cubic-bezier(0.19, 1, 0.22, 1) both;
+    animation: coll 0.7s cubic-bezier(0.19, 1, 0.22, 1) both;
 }
 
 #showcase::-webkit-scrollbar{
@@ -164,6 +170,8 @@ body,html{
 #showcase::-webkit-scrollbar-thumb{
     background-color: black;
 }
+
+
 
 .showpieces{
     width: 600px;
@@ -177,6 +185,95 @@ body,html{
 
 .items:hover{
     cursor:pointer;
+}
+
+#webprojects{
+    width: 100%;
+    height: 100% !important;
+    overflow: auto;
+    padding: 20px;
+    display: none;
+    background-color: rgb(230, 230, 230);
+    animation: coll 0.7s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+#webprojects::-webkit-scrollbar{
+    width: 10px;
+    height: 0px;
+    scroll-snap-type-x: hidden;
+    background-color: #888;
+}
+#webprojects::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+
+#webprojects h2{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    /* color: #1cd0dc; */
+}
+
+.websites{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: red;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.websites:hover{
+    cursor: pointer;
+}
+#top{
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(121, 121, 121);
+    opacity: 0.5;
+    animation: down 0.3s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+.websites button{
+    height: 40px;
+    position: absolute;
+    z-index: 999;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    outline: none;
+}
+
+.websites button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+.websites:nth-child(2){
+ background-image: url(projects/imagination.jpg);
+}
+
+.websites:nth-child(3){
+    background-image: url(projects/HomeAutomation.jpg);
+}
+
+.websites:nth-child(4){
+    background-image: url(projects/Dashboard.jpg);
+}
+
+.websites:nth-child(5){
+    background-image: url(projects/Dashboard2.PNG);
 }
 
 #modalpopup{
@@ -243,11 +340,20 @@ body,html{
     }
 }
 
-@keyframes collapse {
+@keyframes coll {
     from{
       height: 0%;
     }
     to{
-      height: 70%;
+      height: 100%;
     }
-}
+}   
+
+@keyframes down {
+    from{
+      top: -50%;
+    }
+    to{
+      top: 0%;
+    }
+}   

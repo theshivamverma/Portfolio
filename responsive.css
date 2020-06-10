@@ -4,14 +4,14 @@
     }
     .showpieces{
         margin: 10px auto;
-        width: 60%;
-        height: 60%;
+        width: 40%;
+        height: 70%;
     }
     #content{
-        width: 95%;
-        height: 71%;
-        left:2.5%;
-        top: 14.5%;
+        width: 80%;
+        height: 92%;
+        left:10%;
+        top: 4%;
     }
     .close{
         right: 0%;
