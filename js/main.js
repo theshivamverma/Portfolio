@@ -40,14 +40,48 @@ w.addEventListener("click",function(){
         }
 })
 
-var x = document.querySelectorAll(".websites");
+var x = document.querySelectorAll(".static");
 
-x.forEach(elem => {
+x.forEach((elem, index) => {
     elem.addEventListener("mouseenter", function(){
-        elem.innerHTML = `<button id="btn"> Visit Website</button><div id="top"></div>`
+        elem.innerHTML = `<a target="_blank" href="https://project${index + 1}web.netlify.app"><button id="btn"> Visit Website</button></a><div id="top"></div>`
         var top = document.querySelector("#top");
         top.style.top = "0%"
     })
+
+    console.log(index)
+
+    elem.addEventListener("mouseleave", function() {
+        elem.innerHTML = ``;
+    })
+})
+
+var y = document.querySelectorAll(".anim");
+
+y.forEach((elem, index) => {
+    elem.addEventListener("mouseenter", function(){
+        elem.innerHTML = `<a target="_blank" href="https://shivamwebanim${index + 1}.netlify.app"><button id="btn"> Visit Website</button></a><div id="top"></div>`
+        var top = document.querySelector("#top");
+        top.style.top = "0%"
+    })
+
+    console.log(index)
+
+    elem.addEventListener("mouseleave", function() {
+        elem.innerHTML = ``;
+    })
+})
+
+var z = document.querySelectorAll(".resp");
+
+z.forEach((elem, index) => {
+    elem.addEventListener("mouseenter", function(){
+        elem.innerHTML = `<a target="_blank" href="https://shivamwebresp${index + 1}.netlify.app"><button id="btn"> Visit Website</button></a><div id="top"></div>`
+        var top = document.querySelector("#top");
+        top.style.top = "0%"
+    })
+
+    console.log(index)
 
     elem.addEventListener("mouseleave", function() {
         elem.innerHTML = ``;
