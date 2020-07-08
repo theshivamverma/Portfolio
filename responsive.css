@@ -25,6 +25,20 @@
     .close{
         right: -1%;
     }
+    #webprojects{
+        padding: 0;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .websites{
+        width: 400px;
+    }
+    #webprojects .sections h2{
+        font-size: 20px;
+    }
 }
 
 @media(max-width:800px){
@@ -135,5 +149,36 @@
     .close{
         font-size: 14px;
         right: -2%;
+    }
+}
+
+@media(max-width: 450px){
+    #content{
+        width: 95%;
+        height: 27%;
+        left:2.5%;
+        top: 33%;
+    }
+}
+
+@media(max-width: 400px){
+    #webprojects{
+        padding: 0;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .websites{
+        width: 300px;
+    }
+    #webprojects .sections h2{
+        font-size: 18px;
+    }
+    #content{
+        width: 95%;
+        height: 25%;
+        left:2.5%;
+        top: 33%;
     }
 }

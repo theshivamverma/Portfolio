@@ -112,10 +112,6 @@ body,html{
     font-size: 20px;
 }
 
-.dbtn:nth-child(1){
-    width: 250px
-}
-
 .dbtn:hover{
     cursor: pointer;
 }
@@ -127,7 +123,8 @@ body,html{
 
 #displayarea{
     width: 100%;
-    height: 80%;    
+    height: 80%;  
+    overflow: hidden;  
 }
 
 #blank{
@@ -189,6 +186,7 @@ body,html{
 
 #webprojects{
     display: flex !important;
+    flex-direction: column;
     width: 100%;
     height: 100% !important;
     overflow: auto;
@@ -196,6 +194,19 @@ body,html{
     display: none;
     background-color: rgb(230, 230, 230);
     animation: coll 0.7s cubic-bezier(0.19, 1, 0.22, 1) both;
+}
+
+.sections{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 #webprojects::-webkit-scrollbar{
@@ -218,14 +229,12 @@ body,html{
 .websites{
     position: relative;
     width: 500px;
-    height: 300px;
-    background-color: red;
+    height: 250px;
     border-radius: 5px;
     margin-top: 20px;
     margin-left: 20px;
     overflow: hidden;
     background-size: cover;
-    background-position: center;
 }
 .websites:hover{
     cursor: pointer;
@@ -244,7 +253,7 @@ body,html{
     height: 40px;
     position: absolute;
     z-index: 999;
-    top: 70%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px 20px;
@@ -260,20 +269,44 @@ body,html{
     color: #000;
 }
 
-.websites:nth-child(2){
+.static:nth-child(1){
  background-image: url(projects/imagination.jpg);
 }
 
-.websites:nth-child(3){
+.static:nth-child(2){
     background-image: url(projects/HomeAutomation.jpg);
 }
 
-.websites:nth-child(4){
+.static:nth-child(3){
     background-image: url(projects/Dashboard.jpg);
 }
 
-.websites:nth-child(5){
+.static:nth-child(4){
     background-image: url(projects/Dashboard2.PNG);
+}
+
+.anim:nth-child(1){
+    background-image: url(projects/gsap1.jpg);
+}
+   
+.anim:nth-child(2){
+    background-image: url(projects/gsap2.jpg);
+}
+   
+.anim:nth-child(3){
+    background-image: url(projects/gsap3.jpg);
+}
+   
+.anim:nth-child(4){
+       background-image: url(projects/typed.jpg);
+}
+
+.resp:nth-child(1){
+    background-image: url(projects/resp1.jpg);
+}
+   
+.resp:nth-child(2){
+       background-image: url(projects/resp2.jpg);
 }
 
 #modalpopup{
