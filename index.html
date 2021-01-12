@@ -1,29 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shivam Verma</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2"  />
-    <link rel="manifest" href="/site.webmanifest">
-</head>
-<body>
-    <div id="back">
-        <div id="particles">
-            <p>Click on the screen to add more particles</p>
-            <div id="centertext">
-                <h2>Hey there, this is <span class="highlight"> Shivam Verma</span></h2>
-                <h1>I am a <span class="highlight">UI/UX Designer </span> & <br> <span class="highlight">A Full Stack Web Developer</span></h1>
-                <a href="#project"><button>View My Work <i></i></button></a>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico?v=2" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="particles" id="particles">
+        <nav>
+            <a class="brand" href="/">Shivam Verma</a>
+            <div class="links">
+                <a href="#bio">About</a>
+                <a href="#projects">Projects</a>
+                <a href="">Blogs</a>
             </div>
+        </nav>
+      <section class="intro" id="intro">
+        <div class="hero">
+          <h1>
+            Namaste 🙏, this is <span class="highlight">Shivam Verma </span>
+          </h1>
+        <img class="emoticon" src="./logos/panda.png" alt="">
         </div>
+
+        <h2>I am a <span class="highlight">Full Stack Web Developer</span></h2>
+        <h3>
+          Working primarily with <span class="highlight">JavaScript</span>
+        </h3>
+        <a href="#bio"><button>Know More</button></a>
+      </section>
     </div>
-    <div id="project">
+    <div class="bio" id="bio">
+      <section class="about">
+        <h1 class="section-heading">About me</h1>
+        <img src="./logos/dp.jpg" alt="" class="dp" />
+        <h2>
+          The thing that keeps me fascinated, curious, <br />
+          motivated and happy is Coding.
+        </h2>
+        <h3>
+          I like building stuff through code, reading books, <br />
+          writing blogs and teaching. <br />
+          Also I love spending time with dogs.
+        </h3>
+      </section>
+      <section class="skills">
+        <h1 class="section-heading">My Skillset</h1>
+        <section class="skill-display" id="display">
+          <div class="skill-container">
+            <img src="./logos/html.png" class="skill-image" alt="" />
+            <h5>HTML</h5>
+          </div>
+          <div class="skill-container">
+            <img src="./logos/css3.png" class="skill-image" alt="" />
+            <h5>CSS</h5>
+          </div>
+          <div class="skill-container">
+            <img src="./logos/javascript.png" class="skill-image" alt="" />
+            <h5>JavaScript</h5>
+          </div>
+          <div class="skill-container">
+            <img src="./logos/git.png" class="skill-image" alt="" />
+            <h5>Git & Github</h5>
+          </div>
+          <div class="skill-container">
+            <img src="./logos/mongodb.png" class="skill-image" alt="" />
+            <h5>MongoDB</h5>
+          </div>
+           <div class="skill-container">
+            <img src="./logos/express.png" class="skill-image" alt="" />
+            <h5>ExpressJS</h5>
+          </div>
+          <div class="skill-container">
+            <img src="./logos/react.png" class="skill-image" alt="" />
+            <h5>ReactJS</h5>
+          </div>
+          <div class="skill-container">
+            <img src="./logos/node.png" class="skill-image" alt="" />
+            <h5>NodeJS</h5>
+          </div>
+        </section>
+      </section>
+    </div>
+    <div class="projects" id="projects">
+      <div class="project-categories">
+        <button class="category-btn" id="hcj">HTML, CSS & JS</button>
+        <button class="category-btn" id="react">React</button>
+        <button class="category-btn" id="mern">MERN</button>
+      </div>
+      <div class="project-container">
+      
+      </div>
+    </div>
+    <!-- <div id="project">
 
         <h1 id="test">My Projects</h1>
         <div id="buttons">
@@ -112,8 +189,8 @@
               </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <script src="js/particles.js"></script>
-    <script src="js/main.js"></script>
-</body>
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
