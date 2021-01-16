@@ -1,8 +1,8 @@
-particlesJS.load('particles','js/particles.json');
-particlesJS.load('bio','js/particles.json');
-particlesJS.load('projects','js/particles.json');
+particlesJS.load("particles", "js/particles.json");
+particlesJS.load("bio", "js/particles.json");
+particlesJS.load("projects", "js/particles.json");
 
-import projects from './projects.js'
+import projects from "./projects.js";
 
 let hcj = document.querySelector("#hcj");
 let react = document.querySelector("#react");
@@ -14,6 +14,11 @@ function displayProjects() {
   let currentSelection = projects[selected];
   document.querySelector(".projects").style.height =
     100 + currentSelection.length * 26 + "vh";
+
+  if (window.matchMedia("screen and (max-width: 768px)").matches) {
+    document.querySelector(".projects").style.height =
+      100 + currentSelection.length * 30 + "vh";
+  }
   currentSelection.forEach(function (p) {
     let labelstring = p.labels.map(function (l) {
       return `<span class="label ${l}">${l}</span>`;
@@ -40,21 +45,34 @@ function displayProjects() {
   });
 }
 
-window.addEventListener('load', function() {
-    displayProjects();
-})
+window.addEventListener("load", function () {
+  displayProjects();
+});
 
-hcj.addEventListener('click', function(){
+hcj.addEventListener("click", function () {
   document.querySelector(".project-container").innerHTML = ``;
   selected = "hcj";
   displayProjects();
-})
+});
 
-react.addEventListener('click', function(){
-  document.querySelector('.project-container').innerHTML = ``;
+react.addEventListener("click", function () {
+  document.querySelector(".project-container").innerHTML = ``;
   selected = "react";
   displayProjects();
-})
+});
+
+document.querySelectorAll(".menu__toggle").forEach(function (x) {
+  x.addEventListener("click", function () {
+    document.querySelector(".links").classList.toggle("active");
+  });
+});
+
+document.querySelectorAll(".links__link").forEach(function (x) {
+  x.addEventListener("click", function () {
+    document.querySelector(".links").classList.toggle("active");
+  });
+});
+
 
 // const c = document.querySelector("#uiux");
 // const cl = document.querySelector("#showcase");
@@ -144,7 +162,6 @@ react.addEventListener('click', function(){
 //     })
 // })
 
-
 // const modal = document.querySelector("#modalpopup")
 // const cont = document.querySelector("#cont")
 
@@ -153,12 +170,10 @@ react.addEventListener('click', function(){
 //     cont.src = path;
 // }
 
-
 // const cls = document.querySelector("#cl");
 // cls.addEventListener("click",function(){
 //     modal.style.display = "none";
 // })
-
 
 // window.addEventListener("click",function(event) {
 //     if (event.target == modal) {
