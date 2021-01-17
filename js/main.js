@@ -2,22 +2,33 @@ particlesJS.load("particles", "js/particles.json");
 particlesJS.load("bio", "js/particles.json");
 particlesJS.load("projects", "js/particles.json");
 
+if (window.matchMedia("screen and (max-width: 500px)").matches) {
+  particlesJS.load("particles", "js/mobile.json");
+  particlesJS.load("bio", "js/mobile.json");
+  particlesJS.load("projects", "js/mobile.json");
+}
+
 import projects from "./projects.js";
 
 let hcj = document.querySelector("#hcj");
 let react = document.querySelector("#react");
 let mern = document.querySelector("#mern");
+let selectedCategory = document.querySelector(".category-selected");
 
 var selected = "hcj";
 
 function displayProjects() {
   let currentSelection = projects[selected];
   document.querySelector(".projects").style.height =
-    100 + currentSelection.length * 26 + "vh";
+    100 + currentSelection.length * 29 + "vh";
 
   if (window.matchMedia("screen and (max-width: 768px)").matches) {
     document.querySelector(".projects").style.height =
-      100 + currentSelection.length * 30 + "vh";
+      100 + currentSelection.length * 32 + "vh";
+  }
+  if (window.matchMedia("screen and (max-width: 500px)").matches) {
+    document.querySelector(".projects").style.height =
+      100 + currentSelection.length * 58 + "vh";
   }
   currentSelection.forEach(function (p) {
     let labelstring = p.labels.map(function (l) {
@@ -43,6 +54,12 @@ function displayProjects() {
           </div>
         </div>`;
   });
+
+  if ((selected == "hcj")) {
+    selectedCategory.textContent = `HTML, CSS & JS Projects`;
+  } else if ((selected == "react")) {
+    selectedCategory.textContent = `React Projects`;
+  }
 }
 
 window.addEventListener("load", function () {
@@ -72,7 +89,6 @@ document.querySelectorAll(".links__link").forEach(function (x) {
     document.querySelector(".links").classList.toggle("active");
   });
 });
-
 
 // const c = document.querySelector("#uiux");
 // const cl = document.querySelector("#showcase");

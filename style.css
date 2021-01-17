@@ -23,7 +23,7 @@ body{
 
 .particles-js-canvas-el{
     width: 100% !important;
-    min-height: 100vh;
+    height: 100% !important;
     position: absolute;
     border: none;
     outline: none;
@@ -242,7 +242,7 @@ nav{
     width: 60%;
     position: absolute;
     z-index: 9;
-    top: 15vh;
+    top: 25vh;
     padding: 1rem 2rem;
     left: 50%;
     transform: translateX(-50%);
@@ -251,7 +251,8 @@ nav{
 }
 
 .category-btn{
-    padding: 0.7rem 2rem;
+    width: 200px;
+    height: 60px;
     background-color: transparent;
     border: 2px solid #fff;
     font-weight: 600;
@@ -269,12 +270,27 @@ nav{
     border: 2px solid var(--secondary-color);
 }
 
+.heading-project{
+    position: absolute;
+    top: 10vh;
+    left: 0%;
+    width: 100%;
+}
+
+.category-selected{
+    position: absolute;
+    font-size: 1.5rem;
+    top: 40vh;
+    left: 0%;
+    width: 100%;
+}
+
 .project-container{
     width: 70%;
     border-radius: 0.5rem;
     min-height: 70vh;
     position: absolute;
-    top: 35vh;
+    top: 50vh;
     left: 50%;
     transform: translateX(-50%);
     z-index: 99;
@@ -307,7 +323,7 @@ nav{
 
 .project-desc > p{
     font-size: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .label{
@@ -338,7 +354,7 @@ nav{
 
 .project-desc > a > button{
     display: block;
-    margin: 1rem auto;
+    margin: 1.2rem auto;
     padding: 0.5rem 0.7rem;
     color: #000;
     background-color: #fff;

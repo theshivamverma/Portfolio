@@ -106,11 +106,12 @@
     padding: 0 1rem;
   }
   .container {
-    width: 110%;
+    width: 105%;
+    overflow-x: hidden !important;
   }
   .intro {
     width: 100%;
-    left: 2%;
+    left: 3%;
     transform: translate(0%, -50%);
   }
   .intro > h1 {
@@ -132,8 +133,89 @@
     font-size: 1.1rem;
     margin-top: 1rem;
   }
-  .intro > a > button{
-      margin-top: 1.5rem;
+  .intro > a > button {
+    margin-top: 1.5rem;
+  }
+
+  .bio {
+    flex-direction: column;
+    min-height: 140vh;
+    border: none;
+    position: relative;
+  }
+  .about,
+  .skills {
+    width: 100% !important;
+    height: 70vh !important;
+    padding: 0;
+    padding-top: 10vh;
+    border: none;
+  }
+
+  .about > h2{
+    font-size: 1.2rem;
+  }
+
+  .about > h3{
+    font-size: 1rem;
+  }
+
+  .skill-display {
+    width: 100%;
+  }
+  .skill-container:nth-child(4) > h5 {
+    margin-top: 1rem;
+  }
+  .skill-container:nth-child(4) > .skill-image {
+    margin-top: 1.5rem;
+  }
+  .skill-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .heading-project{
+    top: 8vh;
+  }
+  .category-selected{
+    top: 55vh;
+    font-size: 1.2rem;
+  }
+
+  .project-categories {
+    width: 100%;
+    padding: 1rem;
+    left: 0%;
+    transform: translateX(0%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 18vh;
+  }
+  .category-btn {
+    margin-bottom: 1rem;
+  }
+
+  .project-container {
+    width: 80%;
+    justify-content: center;
+    flex-direction: column;
+    top: 63vh;
+  }
+  .project {
+    width: 100%;
+  }
+  .project-image{
+    width: 100%;
+  }
+  .project-desc {
+    width: 100%;
+  }
+
+  .links {
+    right: -80%;
+    width: 60%;
+    padding: 2rem 1rem;
   }
 }
 
