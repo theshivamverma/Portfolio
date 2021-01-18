@@ -6,6 +6,9 @@ if (window.matchMedia("screen and (max-width: 500px)").matches) {
   particlesJS.load("particles", "js/mobile.json");
   particlesJS.load("bio", "js/mobile.json");
   particlesJS.load("projects", "js/mobile.json");
+  document.querySelector(".intro__heading").innerHTML = `
+   Namaste 🙏 <br> this is
+            <span class="highlight highlight--name">Shivam Verma </span>`;
 }
 
 import projects from "./projects.js";
@@ -55,9 +58,9 @@ function displayProjects() {
         </div>`;
   });
 
-  if ((selected == "hcj")) {
+  if (selected == "hcj") {
     selectedCategory.textContent = `HTML, CSS & JS Projects`;
-  } else if ((selected == "react")) {
+  } else if (selected == "react") {
     selectedCategory.textContent = `React Projects`;
   }
 }
