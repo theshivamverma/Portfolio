@@ -76,11 +76,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 2px 5px #1ccfdc1c;
+    border: 2px solid #fff;
     margin-bottom: 3rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     font-size: 1.4rem;
+    color: #fff;
   }
 
   #close {
@@ -102,19 +103,27 @@
 }
 
 @media (max-width: 500px) {
+  .particles-js-canvas-el{
+    width: 100vw !important;
+    height: 100% !important;
+    position: absolute;
+    border: none;
+    outline: none;
+  }
   nav {
     padding: 0 1rem;
   }
   .container {
-    width: 105%;
+    width: 100%;
     overflow-x: hidden !important;
   }
   .intro {
     width: 100%;
-    left: 3%;
+    left: 0%;
     transform: translate(0%, -50%);
   }
   .intro > h1 {
+    width: 100%;
     font-size: 1.8rem;
   }
   .emoticon {
