@@ -1,11 +1,7 @@
 particlesJS.load("particles", "js/particles.json");
-particlesJS.load("bio", "js/particles.json");
-particlesJS.load("projects", "js/particles.json");
 
 if (window.matchMedia("screen and (max-width: 500px)").matches) {
-  particlesJS.load("particles", "js/mobile.json");
-  particlesJS.load("bio", "js/mobile.json");
-  particlesJS.load("projects", "js/mobile.json");
+  particlesJS.load("particles", "");
   document.querySelector(".intro__heading").innerHTML = `
    Namaste 🙏 <br> this is
             <span class="highlight highlight--name">Shivam Verma </span>`;
@@ -23,7 +19,7 @@ var selected = "hcj";
 function displayProjects() {
   let currentSelection = projects[selected];
   document.querySelector(".projects").style.height =
-    100 + currentSelection.length * 29 + "vh";
+    100 + currentSelection.length * 31 + "vh";
 
   if (window.matchMedia("screen and (max-width: 768px)").matches) {
     document.querySelector(".projects").style.height =

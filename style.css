@@ -156,7 +156,7 @@ nav{
 .about{
     width: 50% !important;
     padding: 0 2rem;
-    padding-top: 15vh;
+    margin-top: 12vh;
     color: #fff;
     text-align: center;
     z-index: 9;
@@ -186,7 +186,7 @@ nav{
 .skills{
     width: 50% !important;
     padding: 0 2rem;
-    padding-top: 15vh;
+    margin-top: 12vh;
     z-index: 9;
 }
 
@@ -240,12 +240,8 @@ nav{
 
 .project-categories{
     width: 60%;
-    position: absolute;
-    z-index: 9;
-    top: 25vh;
+    margin: 2rem auto;
     padding: 1rem 2rem;
-    left: 50%;
-    transform: translateX(-50%);
     display: flex;
     justify-content: space-between;
 }
@@ -271,29 +267,21 @@ nav{
 }
 
 .heading-project{
-    position: absolute;
-    top: 10vh;
-    left: 0%;
     width: 100%;
+    padding-top: 10vh;
 }
 
 .category-selected{
-    position: absolute;
     font-size: 1.5rem;
-    top: 40vh;
-    left: 0%;
     width: 100%;
+    margin: 2rem 0;
 }
 
 .project-container{
     width: 70%;
     border-radius: 0.5rem;
     min-height: 70vh;
-    position: absolute;
-    top: 50vh;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 99;
+    margin: 3rem auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
