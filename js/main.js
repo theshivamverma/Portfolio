@@ -7,6 +7,15 @@ if (window.matchMedia("screen and (max-width: 500px)").matches) {
             <span class="highlight highlight--name">Shivam Verma </span>`;
 }
 
+window.addEventListener('scroll', function(){
+  let currentScrollValue = window.pageYOffset;
+  if(currentScrollValue > 450 ){
+    document.querySelector("nav").classList.add("active");
+  } else if(currentScrollValue === 0){
+      document.querySelector("nav").classList.remove("active");
+  }
+})
+
 import projects from "./projects.js";
 
 let hcj = document.querySelector("#hcj");
