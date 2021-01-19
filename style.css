@@ -277,13 +277,13 @@ nav.active > .brand{
     letter-spacing: 1.5px;
     cursor: pointer;
     outline: none;
-    background-color: #efefef;
-    box-shadow: 0 10px 0 0 #364047;
+    background-color: #fff;
+    box-shadow: 0 8px 0 0 #484d50;
 }
 
 .category-btn:active{
     position: relative;
-    top: 10px;
+    top: 8px;
     box-shadow: none;
 }
 
