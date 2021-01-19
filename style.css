@@ -266,9 +266,9 @@ nav.active > .brand{
 
 .category-btn{
     width: 200px;
-    height: 60px;
+    height: 50px;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: none;
     border-radius: 0.5rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -277,8 +277,8 @@ nav.active > .brand{
     letter-spacing: 1.5px;
     cursor: pointer;
     outline: none;
-    background-color: #fff;
-    box-shadow: 0 10px 0 0 #bebebe;
+    background-color: #efefef;
+    box-shadow: 0 10px 0 0 #364047;
 }
 
 .category-btn:active{
