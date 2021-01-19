@@ -1,20 +1,28 @@
 particlesJS.load("particles", "js/particles.json");
 
 if (window.matchMedia("screen and (max-width: 500px)").matches) {
-  particlesJS.load("particles", "");
   document.querySelector(".intro__heading").innerHTML = `
    Namaste 🙏 <br> this is
             <span class="highlight highlight--name">Shivam Verma </span>`;
+  document.querySelector("nav").classList.add("active");
 }
 
-window.addEventListener('scroll', function(){
-  let currentScrollValue = window.pageYOffset;
-  if(currentScrollValue > 450 ){
-    document.querySelector("nav").classList.add("active");
-  } else if(currentScrollValue === 0){
-      document.querySelector("nav").classList.remove("active");
-  }
-})
+
+if (!window.matchMedia("screen and (max-width: 500px)").matches) {
+  window.addEventListener("scroll", function () {
+    console.log(window.scrollY);
+    if (window.scrollY >= 450) {
+      if (!document.querySelector("nav").classList.contains("active")) {
+        document.querySelector("nav").classList.toggle("active");
+      }
+    } else if (window.scrollY <= 0) {
+      if (document.querySelector("nav").classList.contains("active")) {
+        document.querySelector("nav").classList.toggle("active");
+      }
+    }
+  });
+}
+
 
 import projects from "./projects.js";
 
