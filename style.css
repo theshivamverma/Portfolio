@@ -97,8 +97,6 @@ nav.active > .brand{
     font-weight: 600;
 }
 
-
-
 .intro{
     position: absolute;
     top: 55%;
@@ -314,8 +312,8 @@ nav.active > .brand{
 
 .project{
     width: 100%;
-    height: 280px;
-    margin-bottom: 2rem;
+    height: 300px;
+    margin-bottom: 4rem;
     display: flex;
     justify-content: space-between;
 }

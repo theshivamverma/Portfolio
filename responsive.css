@@ -52,7 +52,12 @@
     width: 75%;
   }
   .project-categories {
-    width: 80%;
+    width: 95%;
+  }
+  .category-btn {
+    width: 180px;
+    height: 40px;
+    font-size: 0.9rem;
   }
   .project-desc {
     width: 100%;
@@ -84,9 +89,9 @@
     color: #fff;
   }
 
-  nav.active > .links > a{
+  nav.active > .links > a {
     color: #fff;
-}
+  }
 
   #close {
     display: initial;
@@ -120,7 +125,7 @@
   }
   .container {
     width: 100%;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
   }
   .intro {
     width: 100%;
@@ -192,6 +197,10 @@
   .category-selected {
     font-size: 1.2rem;
   }
+  
+  .projects{
+    overflow: hidden;
+  }
 
   .project-categories {
     width: 100%;
@@ -205,7 +214,7 @@
   }
 
   .project-container {
-    width: 80%;
+    width: 90%;
     justify-content: center;
     flex-direction: column;
   }
@@ -216,7 +225,8 @@
     width: 100%;
   }
   .project-desc {
-    width: 100%;
+    width: 100% !important;
+    padding: 1rem;
   }
 
   .links {
@@ -237,33 +247,40 @@
   }
 }
 
-@media (max-width: 450px) {
-  #content {
-    width: 95%;
-    height: 27%;
-    left: 2.5%;
-    top: 33%;
-  }
-}
 
 @media (max-width: 400px) {
-  #webprojects {
-    padding: 0;
+  .bio {
+    overflow: hidden;
   }
-  .content {
-    flex-direction: column;
-    align-items: center;
+  .about {
+    overflow: hidden !important;
+    height: 50% !important;
+    padding-top: 6vh !important;
+    margin-top: 0vh;
   }
-  .websites {
-    width: 300px;
+  .about > h2 {
+    font-size: 1rem;
   }
-  #webprojects .sections h2 {
-    font-size: 18px;
+
+  .about > h3 {
+    font-size: 0.9rem;
   }
-  #content {
-    width: 95%;
-    height: 25%;
-    left: 2.5%;
-    top: 33%;
+
+  .skills {
+    margin-top: 0;
+    height: 50% !important;
+    padding-top: 2vh;
+  }
+  .skill-image {
+    width: 50px;
+    height: 50px;
+  }
+  .skill-container > h5 {
+    font-size: 0.8rem;
+  }
+  .projects{
+    /* background-image: none; */
+    overflow: hidden !important;
+    height: initial;
   }
 }

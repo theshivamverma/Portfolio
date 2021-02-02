@@ -1,14 +1,28 @@
 particlesJS.load("particles", "js/particles.json");
 
+ if (window.matchMedia("screen and (max-width: 800px)").matches) {
+   document.querySelector("nav").classList.add("active");
+ }
+
 if (window.matchMedia("screen and (max-width: 500px)").matches) {
   document.querySelector(".intro__heading").innerHTML = `
-   Namaste 🙏 <br> this is
+  Hello 👋, I am <br>
             <span class="highlight highlight--name">Shivam Verma </span>`;
   document.querySelector("nav").classList.add("active");
 }
 
+if (window.matchMedia("screen and (max-width: 400px)").matches) {
+  document.querySelector(".intro__heading").innerHTML = `
+   Hello 👋, I am <br>
+            <span class="highlight highlight--name">Shivam Verma </span>`;
+  document.querySelector(
+    ".intro__subheading"
+  ).innerHTML = `I am a <span class="highlight">Full Stack Developer</span>`;
+  document.querySelector("nav").classList.add("active");
+}
 
-if (!window.matchMedia("screen and (max-width: 500px)").matches) {
+
+if (!window.matchMedia("screen and (max-width: 800px)").matches) {
   window.addEventListener("scroll", function () {
     console.log(window.scrollY);
     if (window.scrollY >= 450) {
@@ -36,7 +50,7 @@ var selected = "hcj";
 function displayProjects() {
   let currentSelection = projects[selected];
   document.querySelector(".projects").style.height =
-    100 + currentSelection.length * 31 + "vh";
+    100 + currentSelection.length * 36 + "vh";
 
   if (window.matchMedia("screen and (max-width: 768px)").matches) {
     document.querySelector(".projects").style.height =
@@ -44,8 +58,13 @@ function displayProjects() {
   }
   if (window.matchMedia("screen and (max-width: 500px)").matches) {
     document.querySelector(".projects").style.height =
-      100 + currentSelection.length * 58 + "vh";
+      100 + currentSelection.length * 62 + "vh";
   }
+
+   if (window.matchMedia("screen and (max-width: 400px)").matches) {
+     document.querySelector(".projects").style.height =
+       100 + currentSelection.length * 69 + "vh";
+   }
   currentSelection.forEach(function (p) {
     let labelstring = p.labels.map(function (l) {
       return `<span class="label ${l}">${l}</span>`;
@@ -62,7 +81,7 @@ function displayProjects() {
             </a>
             ${
               p.source !== undefined
-                ? `<a href="${p.source}">
+                ? `<a href="${p.source}" target="_blank">
               <button>View Source Code <i class="ri-github-fill"></i></button>
             </a>`
                 : ""
@@ -106,111 +125,11 @@ document.querySelectorAll(".links__link").forEach(function (x) {
   });
 });
 
-// const c = document.querySelector("#uiux");
-// const cl = document.querySelector("#showcase");
-// const b = document.querySelector("#blank");
-// const wp = document.querySelector("#webprojects");
 
-// var f=0
-// c.addEventListener("click",function(){
-//         if(f == 0){
-//             cl.style.display = "block";
-//             wp.style.display = "none";
-//             b.style.display = "none";
-//             cl.style.display = "flex";
-//             cl.style.justifyContent = "space-between";
-//             f = 1;
-//             f1 = 0;
-//         }
-//         else{
-//             cl.style.display = "none";
-//             b.style.display = "block";
-//             f = 0;
-//         }
-// })
 
-// const w = document.querySelector("#web");
-// var f1 = 0;
-// w.addEventListener("click",function(){
-//         if(f1 == 0){
-//             wp.style.display = "block";
-//             cl.style.display = "none";
-//             b.style.display = "none";
-//             f1 = 1;
-//             f = 0;
-//         }
-//         else{
-//             wp.style.display = "none";
-//             b.style.display = "block";
-//             f1 = 0;
-//         }
-// })
 
-// var x = document.querySelectorAll(".static");
 
-// x.forEach((elem, index) => {
-//     elem.addEventListener("mouseenter", function(){
-//         elem.innerHTML = `<a target="_blank" href="https://project${index + 1}web.netlify.app"><button id="btn"> Visit Website</button></a><div id="top"></div>`
-//         var top = document.querySelector("#top");
-//         top.style.top = "0%"
-//     })
 
-//     console.log(index)
 
-//     elem.addEventListener("mouseleave", function() {
-//         elem.innerHTML = ``;
-//     })
-// })
 
-// var y = document.querySelectorAll(".anim");
 
-// y.forEach((elem, index) => {
-//     elem.addEventListener("mouseenter", function(){
-//         elem.innerHTML = `<a target="_blank" href="https://shivamwebanim${index + 1}.netlify.app"><button id="btn"> Visit Website</button></a><div id="top"></div>`
-//         var top = document.querySelector("#top");
-//         top.style.top = "0%"
-//     })
-
-//     console.log(index)
-
-//     elem.addEventListener("mouseleave", function() {
-//         elem.innerHTML = ``;
-//     })
-// })
-
-// var z = document.querySelectorAll(".resp");
-
-// z.forEach((elem, index) => {
-//     elem.addEventListener("mouseenter", function(){
-//         elem.innerHTML = `<a target="_blank" href="https://shivamwebresp${index + 1}.netlify.app"><button id="btn"> Visit Website</button></a><div id="top"></div>`
-//         var top = document.querySelector("#top");
-//         top.style.top = "0%"
-//     })
-
-//     console.log(index)
-
-//     elem.addEventListener("mouseleave", function() {
-//         elem.innerHTML = ``;
-//     })
-// })
-
-// const modal = document.querySelector("#modalpopup")
-// const cont = document.querySelector("#cont")
-
-// function openmodal(path){
-//     modal.style.display = "block";
-//     cont.src = path;
-// }
-
-// const cls = document.querySelector("#cl");
-// cls.addEventListener("click",function(){
-//     modal.style.display = "none";
-// })
-
-// window.addEventListener("click",function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// })
-
-// "value": "#1cd0dc",

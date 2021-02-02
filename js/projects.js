@@ -5,7 +5,7 @@ const projects = {
       desc: "A sample dashboard",
       labels: ["html", "css", "js"],
       livelink: "https://dashboard-design-sv.netlify.app/",
-      source: "https://github.com/ShivamVerma22/dashboard-design",
+      source: "https://github.com/theshivamverma/dashboard-design",
     },
     {
       img: "./projects/hcj2.png",
@@ -20,7 +20,7 @@ const projects = {
         "A web app that works as a cash register, takes input of bill amount and cash received and tells to return the balance in lowest number of denominations possible.",
       labels: ["html", "css", "js"],
       livelink: "https://cashregisterpro.netlify.app",
-      source: "https://github.com/ShivamVerma22/cashRegister",
+      source: "https://github.com/theshivamverma/cashRegister",
     },
     {
       img: "./projects/hcj4.png",
@@ -28,7 +28,7 @@ const projects = {
         "A web app that translates normal english to funny minion language using API by funtranslations.com",
       labels: ["html", "css", "js"],
       livelink: "https://minionlanguage.netlify.app/",
-      source: "https://github.com/ShivamVerma22/bananaSpeak",
+      source: "https://github.com/theshivamverma/bananaSpeak",
     },
   ],
   react: [
@@ -37,7 +37,7 @@ const projects = {
       desc: "A web app that works as a dictionary for emojis",
       labels: ["html", "css", "react"],
       livelink: "https://react-emoji-dictionary.netlify.app/",
-      source: "https://github.com/ShivamVerma22/emojiDictionaryReact",
+      source: "https://github.com/theshivamverma/emojiDictionaryReact",
     },
     {
       img: "./projects/r2.png",
@@ -45,7 +45,7 @@ const projects = {
         "A web app that provides a very fun interactive way to learn about triangles.",
       labels: ["html", "css", "react"],
       livelink: "https://fun-learning-triangles.netlify.app/",
-      source: "https://github.com/ShivamVerma22/geometryApp",
+      source: "https://github.com/theshivamverma/geometryApp",
     },
   ],
 };
