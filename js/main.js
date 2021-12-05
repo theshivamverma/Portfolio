@@ -24,7 +24,6 @@ if (window.matchMedia("screen and (max-width: 400px)").matches) {
 
 if (!window.matchMedia("screen and (max-width: 800px)").matches) {
   window.addEventListener("scroll", function () {
-    console.log(window.scrollY);
     if (window.scrollY >= 450) {
       if (!document.querySelector("nav").classList.contains("active")) {
         document.querySelector("nav").classList.toggle("active");
@@ -97,21 +96,21 @@ function displayProjects() {
   }
 }
 
-window.addEventListener("load", function () {
-  displayProjects();
-});
+// window.addEventListener("load", function () {
+//   displayProjects();
+// });
 
-hcj.addEventListener("click", function () {
-  document.querySelector(".project-container").innerHTML = ``;
-  selected = "hcj";
-  displayProjects();
-});
+// hcj.addEventListener("click", function () {
+//   document.querySelector(".project-container").innerHTML = ``;
+//   selected = "hcj";
+//   displayProjects();
+// });
 
-react.addEventListener("click", function () {
-  document.querySelector(".project-container").innerHTML = ``;
-  selected = "react";
-  displayProjects();
-});
+// react.addEventListener("click", function () {
+//   document.querySelector(".project-container").innerHTML = ``;
+//   selected = "react";
+//   displayProjects();
+// });
 
 document.querySelectorAll(".menu__toggle").forEach(function (x) {
   x.addEventListener("click", function () {
